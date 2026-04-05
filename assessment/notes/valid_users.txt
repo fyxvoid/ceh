@@ -1,0 +1,34 @@
+Starting smtp-user-enum v1.2 ( http://pentestmonkey.net/tools/smtp-user-enum )
+
+ ----------------------------------------------------------
+|                   Scan Information                       |
+ ----------------------------------------------------------
+
+Mode ..................... VRFY
+Worker Processes ......... 5
+Usernames file ........... /usr/share/wordlists/metasploit/unix_users.txt
+Target count ............. 1
+Username count ........... 175
+Target TCP port .......... 25
+Query timeout ............ 5 secs
+Target domain ............ 
+
+######## Scan started at Wed Apr  1 12:41:41 2026 #########
+192.168.38.130: bin exists
+192.168.38.130: distccd exists
+192.168.38.130: ftp exists
+192.168.38.130: games exists
+192.168.38.130: lp exists
+192.168.38.130: man exists
+192.168.38.130: mysql exists
+192.168.38.130: news exists
+192.168.38.130: postmaster exists
+192.168.38.130: proxy exists
+192.168.38.130: syslog exists
+192.168.38.130: user exists
+192.168.38.130: uucp exists
+192.168.38.130: www-data exists
+######## Scan completed at Wed Apr  1 12:43:46 2026 #########
+14 results.
+
+175 queries in 125 seconds (1.4 queries / sec)

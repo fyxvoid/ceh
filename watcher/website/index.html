@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Scanner Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Network Scanner Dashboard</h1>
+        <div class="status-bar">
+            <span id="last-updated">Last updated: --</span>
+            <span id="next-scan">Next scan in: 10:00</span>
+            <button id="scan-now" onclick="runScan()">Scan Now</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Summary Cards -->
+        <div class="cards">
+            <div class="card">
+                <h3>Hosts Found</h3>
+                <p id="host-count">0</p>
+            </div>
+            <div class="card">
+                <h3>Open Ports</h3>
+                <p id="port-count">0</p>
+            </div>
+            <div class="card">
+                <h3>Scan Status</h3>
+                <p id="scan-status">Idle</p>
+            </div>
+        </div>
+
+        <!-- Hosts Table -->
+        <div class="section">
+            <h2>Discovered Hosts</h2>
+            <table id="hosts-table">
+                <thead>
+                    <tr>
+                        <th>IP Address</th>
+                        <th>Open Ports</th>
+                        <th>Services</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="hosts-body">
+                    <tr><td colspan="4">No data yet. Run a scan.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Logs Section -->
+        <div class="section">
+            <h2>Scan Logs</h2>
+            <div id="log-box"></div>
+        </div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
